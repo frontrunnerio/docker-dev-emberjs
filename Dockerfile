@@ -22,12 +22,3 @@ RUN \
 			phantomjs \
 	'
 
-# Install Ruby
-RUN \
-	/bin/bash -c '\
-		export PATH="$HOME/.rbenv/bin:$PATH" && \
-		eval "$(rbenv init -)" && \
-		rbenv install 2.2.3 && \
-		rbenv global 2.2.3 \
-	'
-
